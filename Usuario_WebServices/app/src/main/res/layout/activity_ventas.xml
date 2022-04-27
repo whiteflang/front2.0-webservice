@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ventas">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Ventas"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Codigo Venta"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="91dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etcodigo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:hint="*************"
+        android:inputType="textEmailAddress"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Fecha"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:hint="D/M/A"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Usuario"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <EditText
+        android:id="@+id/etusuario"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <Button
+        android:id="@+id/btnconsultar"
+        android:layout_width="203dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/botonesblue"
+        android:text="Consultar Venta"
+        app:layout_constraintBottom_toTopOf="@+id/btnconsultar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etusuario"
+        tools:ignore="MissingConstraints,NotSibling,UnknownId" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="146dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="@color/botonesblue"
+        android:drawableTint="@color/botonesblue"
+        android:text="Actualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnconsultar"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnadiconar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="194dp"
+        android:backgroundTint="@color/botonesblue"
+        android:drawableTint="@color/botonesblue"
+        android:text="Adicionar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnadicionar"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <Button
+        android:id="@+id/btneliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="125dp"
+        android:backgroundTint="@color/botonesblue"
+        android:drawableTint="@color/botonesblue"
+        android:text="Eliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btneliminar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="NotSibling,UnknownId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
